@@ -894,7 +894,7 @@
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
         "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "创建一个名为<code>smaller-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
         "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
