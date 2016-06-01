@@ -1610,7 +1610,7 @@
       ],
       "tests": [
         "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: 你表单中的第一个单选按钮应该默认被选中。');",
-        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表彰中的第一个复选按钮应该默认被选中。');"
+        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表单中的第一个复选按钮应该默认被选中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
