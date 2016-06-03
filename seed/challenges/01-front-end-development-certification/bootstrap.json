@@ -857,10 +857,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"p span\") && $(\"p span\").length > 0, 'message: Your <code>span</code> element should be inside your <code>p</code> element.');",
-        "assert($(\"p span\") && $(\"p span\").text().match(/love/i), 'message: Your <code>span</code> element should have the text <code>love</code>.');",
-        "assert($(\"span\").hasClass(\"text-danger\"), 'message: Your <code>span</code> element should have class <code>text-danger</code>.');",
-        "assert(code.match(/<\\/span>/g) && code.match(/<span/g) && code.match(/<\\/span>/g).length === code.match(/<span/g).length, 'message: Make sure your <code>span</code> element has a closing tag.');"
+        "assert($(\"p span\") && $(\"p span\").length > 0, 'message: 你的<code>span</code> 元素应该在 <code>p</code>元素里面。');",
+        "assert($(\"p span\") && $(\"p span\").text().match(/love/i), 'message: 你的<code>span</code>元素应该包含文本<code>love</code>.');",
+        "assert($(\"span\").hasClass(\"text-danger\"), 'message: 你的<code>span</code> 元素应该有class <code>text-danger</code>.');",
+        "assert(code.match(/<\\/span>/g) && code.match(/<span/g) && code.match(/<\\/span>/g).length === code.match(/<span/g).length, 'message: 确保你的 <code>span</code> 元素有闭合符。');"
       ],
       "type": "waypoint",
       "challengeType": 0
