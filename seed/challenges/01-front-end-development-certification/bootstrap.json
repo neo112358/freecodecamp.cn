@@ -1090,9 +1090,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn-danger > i\").is(\".fa.fa-trash\"), 'message: You should add a <code>&#60;i class=\"fa fa-trash\"&#62;&#60;/i&#62;</code> within your delete button element.');",
-        "assert($(\".btn-info > i\").is(\".fa.fa-info-circle\"), 'message: You should add a <code>&#60;i class=\"fa fa-info-circle\"&#62;&#60;/i&#62;</code> within your info button element.');",
-        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i>/g).length > 2 && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: Make sure each of your <code>i</code> elements has a closing tag and <code>&#60;i class=\"fa fa-thumbs-up\"&#62;&#60;/i&#62;</code> is in your like button element.');"
+        "assert($(\".btn-danger > i\").is(\".fa.fa-trash\"), 'message: 你应该在delete按钮中增加一个 <code>&#60;i class=\"fa fa-trash\"&#62;&#60;/i&#62;</code>元素。');",
+        "assert($(\".btn-info > i\").is(\".fa.fa-info-circle\"), 'message: 你应该在info按钮中增加一个<code>&#60;i class=\"fa fa-info-circle\"&#62;&#60;/i&#62;</code>元素。');",
+        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i>/g).length > 2 && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message:确保你的每一个 <code>i</code>都有一个闭合标签，且 <code>&#60;i class=\"fa fa-thumbs-up\"&#62;&#60;/i&#62;</code>应在你的like按钮中');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1245,9 +1245,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(input[type=\\\"checkbox\\\"])\").length > 0, 'message: Nest all of your checkboxes inside one <code>div</code> with the class <code>row</code>.');",
-        "assert($(\"div.col-xs-4:has(input[type=\\\"checkbox\\\"])\").length > 2, 'message: Nest each of your checkboxes inside its own <code>div</code> with the class <code>col-xs-4</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');"
+        "assert($(\"div.row:has(input[type=\\\"checkbox\\\"])\").length > 0, 'message: 把你所有的复选框放置在一个<code>div</code>标签中，且包含class <code>row</code>.');",
+        "assert($(\"div.col-xs-4:has(input[type=\\\"checkbox\\\"])\").length > 2, 'message: 把每个复选框放置在一个<code>div</code>标签中，且包含class <code>col-xs-4</code>.');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每个<code>div</code>元素都有一个闭合标签.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1425,10 +1425,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(input[type=\\\"text\\\"])\").length > 0 &&  $(\"div.row:has(button[type=\\\"submit\\\"])\").length > 0, 'message: Nest your form submission button and text input in a div with class <code>row</code>.');",
-        "assert($(\"div.col-xs-7:has(input[type=\\\"text\\\"])\").length > 0, 'message: Nest your form text input in a div with the class <code>col-xs-7</code>.');",
-        "assert($(\"div.col-xs-5:has(button[type=\\\"submit\\\"])\").length > 0, 'message: Nest your form submission button in a div with the class <code>col-xs-5</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');"
+        "assert($(\"div.row:has(input[type=\\\"text\\\"])\").length > 0 &&  $(\"div.row:has(button[type=\\\"submit\\\"])\").length > 0, 'message:把提交表单的按钮和文本输入框放在同一个div里，且含有class<code>row</code>.');",
+        "assert($(\"div.col-xs-7:has(input[type=\\\"text\\\"])\").length > 0, 'message:把提交表单的按钮放在一个div里，且含有class <code>col-xs-7</code>.');",
+        "assert($(\"div.col-xs-5:has(button[type=\\\"submit\\\"])\").length > 0, 'message: 把文本输入框放在一个div里，且含有 class <code>col-xs-5</code>.');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保每一个 <code>div</code>元素都有一个闭合标签');"
       ],
       "type": "waypoint",
       "challengeType": 0
