@@ -664,9 +664,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#right-well\").children(\"#target5\").length > 0, 'message: Your <code>target5</code> element should be inside your <code>right-well</code>.');",
-        "assert($(\"#left-well\").children(\"#target5\").length > 0, 'message: A copy of your <code>target5</code> element should also be inside your <code>left-well</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to move these elements.');"
+        "assert($(\"#right-well\").children(\"#target5\").length > 0, 'message: <code>target5</code> 元素应该在 <code>right-well</code>中');",
+        "assert($(\"#left-well\").children(\"#target5\").length > 0, 'message:<code>target5</code>元素的拷贝应在<code>left-well</code>中');",
+        "assert(!code.match(/class.*animated/g), 'message: 仅使用jQuuery方法来移动元素');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -721,10 +721,10 @@
         "</body>"
       ],
       "tests": [
-        "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: Your <code>left-well</code> element should have a red background.');",
-        "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: You should use the <code>&#46;parent&#40;&#41;</code> function to modify this element.');",
-        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message: The <code>&#46;parent&#40;&#41;</code> method should be called on the <code>&#35;target1</code> element.');",
-        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: 你的 <code>left-well</code>元素应该有个红色背景');",
+        "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: 你应使用<code>&#46;parent&#40;&#41;</code> 方法来实现');",
+        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message:  <code>&#46;parent&#40;&#41;</code> 方法在 <code>&#35;target1</code> 元素中加载');",
+        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: 仅使用jQuery加载class到元素的方式来实现该效果');"
       ],
       "type": "waypoint",
       "challengeType": 0
