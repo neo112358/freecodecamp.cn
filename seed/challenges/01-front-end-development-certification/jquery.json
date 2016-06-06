@@ -145,8 +145,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the class <code>animated</code> and <code>shake</code> to all your elements with the class <code>well</code>.');",
-        "assert(!code.match(/class\\.\\*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: 使用jQuery <code>addClass&#40&#41</code>方法，把class <code>animated</code> 和 <code>shake</code> 放进所有包含class <code>well</code>的元素中');",
+        "assert(!code.match(/class\\.\\*animated/g), 'message: 仅使用jQuery把这些 class加载到元素里');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -196,9 +196,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target3\").hasClass(\"animated\"), 'message: Select the <code>button</code> element with the <code>id</code> of <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class of <code>animated</code>.');",
-        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: Target the element with the id <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class <code>fadeOut</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#target3\").hasClass(\"animated\"), 'message: 选择<code>button</code>含有<code>id</code> of <code>target3</code>的元素， 再使用jQuery <code>addClass&#40&#41</code> 方法，来加载 class<code>animated</code>.');",
+        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: 对于包含id为 <code>target3</code> 的元素，使用jQuery <code>addClass&#40&#41</code>方法来加载class <code>fadeOut</code>.');",
+        "assert(!code.match(/class.*animated/g), 'message: 仅使用jQuery方法来把这些class加载给元素');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -297,12 +297,12 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?button\\s*?(?:'|\")/gi), 'message: Use the <code>$&#40\"button\"&#41</code> selector.');",
-        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.btn\\s*?(?:'|\")/gi), 'message: Use the <code>$&#40\".btn\"&#41</code> selector.');",
-        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")/gi), 'message: Use the <code>$&#40\"#target1\"&#41</code> selector.');",
-        "assert(code.match(/addClass/g) && code.match(/addClass\\(\\s*?('|\")[\\w-]+\\1\\s*?\\)/g).length > 2, 'message: Only add one class with each of your three selectors.');",
-        "assert($(\"#target1\").hasClass(\"animated\") && $(\"#target1\").hasClass(\"shake\") && $(\"#target1\").hasClass(\"btn-primary\"), 'message: Your <code>#target1</code> element should have the class <code>animated</code>&#130; <code>shake</code> and <code>btn-primary</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?button\\s*?(?:'|\")/gi), 'message: 使用<code>$&#40\"button\"&#41</code> 选择器');",
+        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.btn\\s*?(?:'|\")/gi), 'message: 使用 <code>$&#40\".btn\"&#41</code> 选择器');",
+        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")/gi), 'message: 使用 <code>$&#40\"#target1\"&#41</code> 选择器');",
+        "assert(code.match(/addClass/g) && code.match(/addClass\\(\\s*?('|\")[\\w-]+\\1\\s*?\\)/g).length > 2, 'message: 每个选择器仅加载一个方法');",
+        "assert($(\"#target1\").hasClass(\"animated\") && $(\"#target1\").hasClass(\"shake\") && $(\"#target1\").hasClass(\"btn-primary\"), 'message: 你的 <code>#target1</code>元素应该含有class <code>animated</code>&#130; <code>shake</code> and <code>btn-primary</code>.');",
+        "assert(!code.match(/class.*animated/g), 'message: 仅用jQuery来把这些class加载给元素');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -352,9 +352,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn-default\").length === 0, 'message: Remove the <code>btn-default</code> class from all of your <code>button</code> elements.');",
-        "assert(code.match(/btn btn-default/g), 'message: Only use jQuery to remove this class from the element.');",
-        "assert(code.match(/\\.[\\v\\s]*removeClass[\\s\\v]*\\([\\s\\v]*('|\")\\s*btn-default\\s*('|\")[\\s\\v]*\\)/gm), 'message: Only remove the <code>btn-default</code> class.');"
+        "assert($(\".btn-default\").length === 0, 'message: 把 <code>btn-default</code> class 从所有 <code>button</code> 元素中去除');",
+        "assert(code.match(/btn btn-default/g), 'message: 仅使用jQuery来把这个class从元素中去除');",
+        "assert(code.match(/\\.[\\v\\s]*removeClass[\\s\\v]*\\([\\s\\v]*('|\")\\s*btn-default\\s*('|\")[\\s\\v]*\\)/gm), 'message: 只去除<code>btn-default</code> class.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -407,8 +407,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target1\").css(\"color\") === 'rgb(255, 0, 0)', 'message: Your <code>target1</code> element should have red text.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#target1\").css(\"color\") === 'rgb(255, 0, 0)', 'message: <code>target1</code>中的文本应改为红色');",
+        "assert(!code.match(/class.*animated/g), 'message: 只使用jQuery加载class到元素的方法来实现该效果');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -458,9 +458,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target1\") && $(\"#target1\").prop(\"disabled\"), 'message: Disable your <code>target1</code> button.');",
-        "assert($(\"#target2\") && !$(\"#target2\").prop(\"disabled\"), 'message: Do not disable any other buttons.');",
-        "assert(!code.match(/disabled>/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#target1\") && $(\"#target1\").prop(\"disabled\"), 'message: 让<code>target1</code>按钮不可选');",
+        "assert($(\"#target2\") && !$(\"#target2\").prop(\"disabled\"), 'message: 不改变其他按钮可选态');",
+        "assert(!code.match(/disabled>/g), 'message: 只使用jQuery加载class给元素的方式来实现该效果');"
       ],
       "type": "waypoint",
       "challengeType": 0
