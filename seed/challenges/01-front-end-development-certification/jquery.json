@@ -510,9 +510,9 @@
         "</div>"
       ],
       "tests": [
-        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags.');",
-        "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: Make sure the text is otherwise unchanged.');",
-        "assert.isFalse((/<em>/gi).test($(\"h3\").html()), 'message: Do not alter any other text.');"
+        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: 通过加入HTML标签的方法来强调<code>target4</code>按钮');",
+        "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: 确保原来targrt4按钮中的文本不变');",
+        "assert.isFalse((/<em>/gi).test($(\"h3\").html()), 'message:不要改变其他按钮');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -559,8 +559,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target4\").length === 0, 'message: Use jQuery to remove your <code>target4</code> element from your page.');",
-        "assert(code.match(/id=\"target4/g), 'message: Only use jQuery to remove this element.');"
+        "assert($(\"#target4\").length === 0, 'message: 使用jQuery从页面中移除 <code>target4</code> 元素');",
+        "assert(code.match(/id=\"target4/g), 'message: 仅使用jQuery来实现该效果');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -610,9 +610,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#left-well\").children(\"#target2\").length === 0, 'message: Your <code>target2</code> element should not be inside your <code>left-well</code>.');",
-        "assert($(\"#right-well\").children(\"#target2\").length > 0, 'message: Your <code>target2</code> element should be inside your <code>right-well</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to move these elements.');"
+        "assert($(\"#left-well\").children(\"#target2\").length === 0, 'message:<code>target2</code> 元素不应在 <code>left-well</code>中');",
+        "assert($(\"#right-well\").children(\"#target2\").length > 0, 'message: <code>target2</code> 元素应该在 <code>right-well</code>中');",
+        "assert(!code.match(/class.*animated/g), 'message:仅使用jQuery来移动元素');"
       ],
       "type": "waypoint",
       "challengeType": 0
